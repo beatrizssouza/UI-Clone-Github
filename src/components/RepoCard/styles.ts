@@ -76,6 +76,15 @@ export const BotSide = styled.div`
         &.other {
             background: var(--other-language);
         }
+        &.c{
+            background: var(--other-language);
+        }
+        &.html{
+            background: var(--other-language);
+        }
+        &.css {
+            background: var(--other-language);
+        }
         &.javascript {
             background: var(--javascript);       
         }
