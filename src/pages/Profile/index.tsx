@@ -44,7 +44,7 @@ const Profile: React.FC = () => {
   }, [username]);
 
 
-  if(data ?. error) {
+  if(data?.error) {
     return <h1>{data.error}</h1>
   }
   if(!data?.user || !data?.repos) {
@@ -81,6 +81,7 @@ const Profile: React.FC = () => {
             location={data.user.location}
             email={data.user.email}
             blog={data.user.blog}
+            bio={data.user.bio}
           />
         </LeftSide>
 

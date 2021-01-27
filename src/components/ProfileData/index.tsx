@@ -12,6 +12,7 @@ interface Props {
     location?: string;
     email?: string;
     blog?: string;
+    bio?: string;
 }
 
 const ProfileData: React.FC<Props> = ({
@@ -24,6 +25,7 @@ const ProfileData: React.FC<Props> = ({
     location, 
     email, 
     blog, 
+    bio,
 }) => {
   return (
         <Container>
@@ -36,6 +38,11 @@ const ProfileData: React.FC<Props> = ({
                 </div>
 
             </Flex>
+            <Row>
+                <li>
+                    <span>{bio}</span>
+                </li>
+            </Row>
             <Row>
                 <li>
                     <PeopleIcon />
@@ -77,6 +84,7 @@ const ProfileData: React.FC<Props> = ({
                     </li>
 
                 )}
+               
             </Column>
         </Container>
   );

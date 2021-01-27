@@ -9,6 +9,7 @@ export interface APIUser {
     company?: string;
     email?: string;
     location?: string;
+    bio?: string;
 }
 
 export interface APIRepo {
@@ -18,7 +19,7 @@ export interface APIRepo {
     };
     stargazers_count: number;
     forks:number;
-    html_utl: string;
+    html_url: string;
     language?: string;
-    description?: string;    
+    description?: string    
 }
